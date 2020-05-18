@@ -5,12 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 1.0.3 (2020-05-18)
 
-**Note:** Version bump only for package three-dimensional-slider
-
-
-
-
-
-## 1.0.2 (2020-05-18)
-
-**Note:** Version bump only for package three-dimensional-slider
+**Note:** Version bump only for package vue-cartoon
