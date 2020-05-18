@@ -6,7 +6,7 @@ import { terser } from "rollup-plugin-terser"
 
 const pkg = require("./package.json")
 const DESTINATION = "dist"
-const MODULE_NAME = "three-dimensional-slider"
+const MODULE_NAME = "@elegant/three-dimensional-slider"
 const BANNER = `/* ${pkg.name} v${pkg.version} ${pkg.author} ${pkg.license} */`
 
 const RollUpPlugins = [

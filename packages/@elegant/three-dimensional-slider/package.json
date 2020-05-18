@@ -1,9 +1,9 @@
 {
-  "name": "three-dimensional-slider",
+  "name": "@elegant/three-dimensional-slider",
   "version": "1.0.3",
   "description": "three dimensional slider",
   "author": "lionel8 <951793596@qq.com>",
-  "homepage": "https://github.com/lionel8/vue-animation.git",
+  "homepage": "https://github.com/lionel8/vue-cartoon.git",
   "license": "MIT",
   "main": "dist/three-dimensional-slider.umd.minjs",
   "module": "dist/three-dimensional-slider.esm.js",
@@ -37,12 +37,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lionel8/vue-animation.git"
+    "url": "git+https://github.com/lionel8/vue-cartoon.git"
   },
   "keywords": [
     "slider"
   ],
   "bugs": {
-    "url": "https://github.com/lionel8/vue-animation/issues"
-  }
+    "url": "https://github.com/lionel8/vue-cartoon/issues"
+  },
+  "gitHead": "700ab3ac779ead4fc6360c45c45907bc76233346"
 }
