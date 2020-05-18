@@ -1,3 +1,11 @@
+node_modules/
+packages/**/node_modules/
+packages/**/dist/
+
+lerna-debug.log
+yarn.lock
+package-lock.json
+
 # Build and Release Folders
 bin-debug/
 bin-release/

@@ -1,0 +1,32 @@
+{
+  "name": "vue-cartoon",
+  "private": true,
+  "scripts": {
+    "ci:deploy":"lerna publish --yes",
+    "lint":"eslint packages/**/src/**/*{.js,.vue}",
+    "prepublishOnly": "lerna run prepublishOnly"
+  },
+  "dependencies": {
+    "@commitlint/cli":"^8.3.4",
+    "@commitlint/config-conventional":"^8.3.4",
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-json":"^2.1.1",
+    "eslint-plugin-vue":"^6.2.2",
+    "lint-staged":"^10.2.2"
+  },
+  "devDependencies": {
+    "lerna": "^3.21.0"
+  },
+  "workspaces": ["packages/@elegant/three-dimensional-slider"],
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.vue": ["eslint --fix", "git add"],
+    "ignore": ["**/dist/*.min.js"]
+  },
+  "git-hooks":{
+    "pre-commit":"lint-staged",
+    "commit-msg":"commitlint -E GIT_PARAMS"
+  }
+}

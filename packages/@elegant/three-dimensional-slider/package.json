@@ -1,0 +1,48 @@
+{
+  "name": "three-dimensional-slider",
+  "version": "1.0.2",
+  "description": "three dimensional slider",
+  "author": "lionel8 <951793596@qq.com>",
+  "homepage": "https://github.com/lionel8/vue-animation.git",
+  "license": "MIT",
+  "main": "dist/three-dimensional-slider.umd.minjs",
+  "module": "dist/three-dimensional-slider.esm.js",
+  "scripts": {
+    "dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint lib/**/*{.js,.vue}",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "rollup": "^2.10.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-vue": "^5.1.7",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src",
+    "lib",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionel8/vue-animation.git"
+  },
+  "keywords": [
+    "slider"
+  ],
+  "bugs": {
+    "url": "https://github.com/lionel8/vue-animation/issues"
+  }
+}
