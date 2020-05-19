@@ -4,10 +4,10 @@ import resolve from "rollup-plugin-node-resolve"
 import commonjs from "rollup-plugin-commonjs"
 import { terser } from "rollup-plugin-terser"
 
-const pkg = require("./package.json")
+const pkgInfo = require("./package.json")
 const DESTINATION = "dist"
-const MODULE_NAME = "@elegant/three-dimensional-slider"
-const BANNER = `/* ${pkg.name} v${pkg.version} ${pkg.author} ${pkg.license} */`
+const MODULE_NAME = "three-dimensional-slider"
+const BANNER = `/* ${pkgInfo.name} v${pkgInfo.version} ${pkgInfo.author} ${pkgInfo.license} */`
 
 const RollUpPlugins = [
     VuePlugin(),
@@ -46,7 +46,7 @@ function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
             format: codeFormat,
             name: MODULE_NAME,
             indent:false,
-            sourceMap:true,
+            sourcemap:true,
             exports:'named',
             banner:BANNER
         },
@@ -55,9 +55,9 @@ function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
 }
 export default [
     RollupBuild('es','esm'),
-    RollupBuild('umd'),
-    // RollupBuild('system'),
-    // RollupBuild('amd'),
-    // RollupBuild('cjs'),
-    // RollupBuild('iife')
+    RollupBuild('umd','umd'),
+    RollupBuild('system','system'),
+    RollupBuild('amd','amd'),
+    RollupBuild('cjs','cjs'),
+    //RollupBuild('iife')
 ]

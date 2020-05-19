@@ -1,0 +1,1 @@
+{"version":3,"file":"three-dimensional-slider.amd.js","sources":["../lib/three-dimensional-slider.js"],"sourcesContent":["'use strict';\n\nmodule.exports = threeDimensionalSlider;\n\nfunction threeDimensionalSlider() {\n    // TODO\n}\n"],"names":["threeDimensionalSlider"],"mappings":";;mCAEiBA;IAEjB,SAASA;;;"}
