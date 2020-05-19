@@ -2,7 +2,7 @@
   "name": "vue-cartoon",
   "private": true,
   "scripts": {
-    "ci:deploy":"lerna publish --yes",
+    "ci:publish":"lerna publish --yes",
     "lint":"eslint packages/**/src/**/*{.js,.vue}",
     "prepublishOnly": "lerna run prepublishOnly"
   },
