@@ -5,7 +5,7 @@ import commonjs from "rollup-plugin-commonjs"
 import { terser } from "rollup-plugin-terser"
 
 const pkgInfo = require("./package.json")
-const DESTINATION = "dist"
+const DESTINATION = "lib"
 const MODULE_NAME = "three-dimensional-slider"
 const BANNER = `/* ${pkgInfo.name} v${pkgInfo.version} ${pkgInfo.author} ${pkgInfo.license} */`
 
@@ -38,7 +38,7 @@ const RollUpPlugins = [
 
 function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
     return {
-        input: 'src/index.js',
+        input: 'src/three-dimensional-slider.vue',
         cache:false,
         plugins: RollUpPlugins,
         output: {

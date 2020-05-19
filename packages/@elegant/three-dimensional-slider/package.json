@@ -5,8 +5,8 @@
   "author": "lionel8 <951793596@qq.com>",
   "homepage": "https://github.com/lionel8/vue-cartoon.git",
   "license": "MIT",
-  "main": "dist/three-dimensional-slider.umd.js",
-  "module": "dist/three-dimensional-slider.esm.js",
+  "main": "lib/three-dimensional-slider.umd.js",
+  "module": "lib/three-dimensional-slider.esm.js",
   "scripts": {
     "dev": "rollup -c --environment NODE_ENV:development",
     "build": "rollup -c --environment NODE_ENV:production",
@@ -45,5 +45,5 @@
   "bugs": {
     "url": "https://github.com/lionel8/vue-cartoon/issues"
   },
-  "gitHead": "79a5dce3219e2f5c4e8d7dfe146a9fdc8939704e"
+  "gitHead": "a2ac5d6b5cefd03fbae01827e7705beac99585f3"
 }
