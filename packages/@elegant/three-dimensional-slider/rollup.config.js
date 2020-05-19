@@ -7,7 +7,12 @@ import { terser } from "rollup-plugin-terser"
 const pkgInfo = require("./package.json")
 const DESTINATION = "lib"
 const MODULE_NAME = "three-dimensional-slider"
-const BANNER = `/* ${pkgInfo.name} v${pkgInfo.version} ${pkgInfo.author} ${pkgInfo.license} */`
+const BANNER = 
+    '/*\n' +
+    ` * ${pkgInfo.name} v${pkgInfo.version}\n` +
+    ` * (c) 2019-${new Date().getFullYear()} ${pkgInfo.author}\n` +
+    ` * Released under the ${pkgInfo.license} License.\n` +
+    ' */'
 
 const RollUpPlugins = [
     VuePlugin(),
