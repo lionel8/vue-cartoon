@@ -7,7 +7,7 @@ import { terser } from "rollup-plugin-terser"
 const pkgInfo = require("./package.json")
 const DESTINATION = "lib"
 const MODULE_NAME = "three-dimensional-slider"
-const BANNER = 
+const BANNERTEXT = 
     '/*\n' +
     ` * ${pkgInfo.name} v${pkgInfo.version}\n` +
     ` * (c) 2019-${new Date().getFullYear()} ${pkgInfo.author}\n` +
@@ -32,18 +32,19 @@ const RollUpPlugins = [
     terser({
         compress:false,
         output:{
-            beautify:true,
-            quote_style:3
+            beautify:false,
+            quote_style:3,
+            comments: BANNERTEXT
         },
         ecma:5,
-        mangle:false,
+        mangle:true,
         module:true
     })
 ]
 
 function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
     return {
-        input: 'src/three-dimensional-slider.vue',
+        input: 'src/three-dimensional-slider.js',
         cache:false,
         plugins: RollUpPlugins,
         output: {
@@ -53,7 +54,7 @@ function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
             indent:false,
             sourcemap:true,
             exports:'named',
-            banner:BANNER
+            banner:BANNERTEXT
         },
         external:["vue","axios","loadsh"]
     }

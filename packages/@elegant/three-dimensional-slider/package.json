@@ -19,6 +19,7 @@
     "@babel/preset-env": "^7.9.6",
     "rollup": "^2.10.2",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-banner":"^0.2.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
@@ -45,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/lionel8/vue-cartoon/issues"
   },
-  "gitHead": "983d03f2a19371ca538cccf368e736b0db601070"
+  "gitHead": "3e009037ba4a905b722f4edc6453ded40a578cb7"
 }
