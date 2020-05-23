@@ -32,7 +32,7 @@ const RollUpPlugins = [
     terser({
         compress:false,
         output:{
-            beautify:false,
+            beautify:true,
             quote_style:3,
             comments: BANNERTEXT
         },

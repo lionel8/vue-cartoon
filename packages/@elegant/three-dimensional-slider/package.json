@@ -5,7 +5,7 @@
   "author": "lionel8 <951793596@qq.com>",
   "homepage": "https://github.com/lionel8/vue-cartoon.git",
   "license": "MIT",
-  "main": "lib/three-dimensional-slider.umd.js",
+  "main": "lib/three-dimensional-slider.common.js",
   "module": "lib/three-dimensional-slider.esm.js",
   "scripts": {
     "dev": "rollup -c --environment NODE_ENV:development",
