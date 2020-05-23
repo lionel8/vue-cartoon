@@ -37,7 +37,7 @@ const RollUpPlugins = [
             comments: BANNERTEXT
         },
         ecma:5,
-        mangle:true,
+        mangle:false,
         module:true
     })
 ]
@@ -65,6 +65,6 @@ export default [
     RollupBuild('umd'),
     RollupBuild('system'),
     RollupBuild('amd'),
-    RollupBuild('cjs'),
+    RollupBuild('cjs','common'),
     RollupBuild('iife')
 ]
