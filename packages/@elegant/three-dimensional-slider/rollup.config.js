@@ -52,6 +52,7 @@ function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
             format: codeFormat,
             name: MODULE_NAME,
             indent:false,
+            extend:true,
             sourcemap:true,
             exports:'named',
             banner:BANNERTEXT
@@ -61,9 +62,9 @@ function RollupBuild(codeFormat,suffix=`${codeFormat}.min`){
 }
 export default [
     RollupBuild('es','esm'),
-    RollupBuild('umd','umd'),
-    RollupBuild('system','system'),
-    RollupBuild('amd','amd'),
-    RollupBuild('cjs','cjs'),
-    //RollupBuild('iife')
+    RollupBuild('umd'),
+    RollupBuild('system'),
+    RollupBuild('amd'),
+    RollupBuild('cjs'),
+    RollupBuild('iife')
 ]
