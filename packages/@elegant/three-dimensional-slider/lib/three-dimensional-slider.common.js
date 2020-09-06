@@ -1,5 +1,5 @@
 /*
- * @elegant/three-dimensional-slider v1.0.7
+ * @elegant/three-dimensional-slider v1.0.8
  * (c) 2019-2020 lionel8 <951793596@qq.com>
  * Released under the MIT License.
  */
