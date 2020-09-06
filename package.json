@@ -1,7 +1,7 @@
 {
   "name": "vue-cartoon",
   "version": "1.0.8",
-  "private": true,
+  "private": false,
   "scripts": {
     "ci:publish":"lerna publish --yes",
     "lint":"eslint packages/**/src/**/*{.js,.vue}",
