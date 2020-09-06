@@ -1,6 +1,5 @@
 {
   "name": "vue-cartoon",
-  "version": "1.0.8",
   "private": false,
   "scripts": {
     "ci:publish":"lerna publish --yes",
