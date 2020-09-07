@@ -5,4 +5,4 @@
 export default {
     name:"dimensional-slider"
 }
-</script>>
+</script>
