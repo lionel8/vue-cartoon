@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.12](https://github.com/lionel8/vue-cartoon/compare/v1.0.11...v1.0.12) (2020-09-07)
 
-**Note:** Version bump only for package three-dimensional-slider
+**Note:** Version bump only for package @elegant/three-dimensional-slider
 
 
 
