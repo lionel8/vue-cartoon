@@ -27,7 +27,7 @@
     "type": "git",
     "url": "git+https://github.com/lionel8/vue-cartoon.git"
   },
-  "workspaces": ["packages/three-dimensional-slider"],
+  "workspaces": ["packages/*"],
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"],
     "*.vue": ["eslint --fix", "git add"],
