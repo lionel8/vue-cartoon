@@ -6,6 +6,3 @@ export default {
     name:"dimensional-slider"
 }
 </script>>
-<style>
-
-</style>
