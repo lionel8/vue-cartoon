@@ -1,5 +1,5 @@
 {
-  "name": "@elegant/three-dimensional-slider",
+  "name": "three-dimensional-slider",
   "version": "1.0.11",
   "description": "three dimensional slider",
   "author": "lionel8 <951793596@qq.com>",
@@ -46,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/lionel8/vue-cartoon/issues"
   },
-  "gitHead": "aadecab737be801661d062bfcb691befe8d628cf"
+  "gitHead": "a025698080ae2141b853636cc7bc7b9ec42cfcbc"
 }
