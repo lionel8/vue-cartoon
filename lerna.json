@@ -4,7 +4,7 @@
   "version": "1.0.10",
   "command": {
     "publish": {
-      "registry": "https://npm.pkg.github.com",
+      "registry": "https://registry.npmjs.org",
       "ignoreChanges": [
         "test/**",
         "**/__tests__/**",
@@ -23,6 +23,6 @@
     }
   },
   "packages": [
-    "packages/@elegant/three-dimensional-slider"
+    "packages/three-dimensional-slider"
   ]
 }
